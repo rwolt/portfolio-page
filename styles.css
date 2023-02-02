@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.bio {
+  background-color: aquamarine;
+}
+
+.projects {
+  background-color: palegoldenrod;
+}
+
+.projects-container {
+  display: grid;
+}
+
+.contact {
+  background-color: coral;
+}
+
+.project-card {
+  background-color: palevioletred;
+}
+
+@media (min-width: 320px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 400px);
+  }
+  .project-card {
+    margin: 2rem;
+    max-width: calc(768px - 4rem);
+  }
+
+  .project-card > .project-image {
+    height: 80%;
+  }
+}
+
+@media (min-width: 375px) {
+}
+
+@media (min-wdith: 425px) {
+}
+
+@media (min-width: 768px) {
+  .container {
+  }
+}
