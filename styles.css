@@ -17,10 +17,11 @@
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 200px);
+  grid-template-columns: repeat(auto-fit, 250px);
+  grid-auto-rows: minmax(300px, 1fr);
   justify-content: center;
-  gap: 100px 80px;
-  padding: 80px;
+  gap: 2rem;
+  padding: 2rem 0;
 }
 
 .contact {
@@ -29,7 +30,7 @@
 
 .project-card {
   background-color: palevioletred;
-  height: 250px;
+  height: 300px;
 }
 
 @media (min-width: 320px) {
