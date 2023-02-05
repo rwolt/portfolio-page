@@ -11,8 +11,31 @@
   background-color: aquamarine;
 }
 
+.portrait-container {
+  position: relative;
+  display: grid;
+  justify-content: center;
+}
+
+h1 {
+  color: white;
+  font-size: 3rem;
+  position: absolute;
+  bottom: 0;
+  justify-self: center;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
 .projects {
   background-color: palegoldenrod;
+  text-align: center;
+  padding-top: 2rem;
 }
 
 .projects-grid {
@@ -34,6 +57,9 @@
 }
 
 @media (min-width: 320px) {
+  .dev-portrait {
+    width: 225px;
+  }
 }
 
 @media (min-width: 375px) {
@@ -43,4 +69,10 @@
 }
 
 @media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 250px);
+  }
 }
