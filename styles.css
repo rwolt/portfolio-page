@@ -4,8 +4,7 @@
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
 }
 
 .bio {
@@ -16,8 +15,12 @@
   background-color: palegoldenrod;
 }
 
-.projects-container {
+.projects-grid {
   display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  justify-content: center;
+  gap: 100px 80px;
+  padding: 80px;
 }
 
 .contact {
@@ -26,21 +29,10 @@
 
 .project-card {
   background-color: palevioletred;
+  height: 250px;
 }
 
 @media (min-width: 320px) {
-  .projects-container {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 400px);
-  }
-  .project-card {
-    margin: 2rem;
-    max-width: calc(768px - 4rem);
-  }
-
-  .project-card > .project-image {
-    height: 80%;
-  }
 }
 
 @media (min-width: 375px) {
@@ -50,6 +42,4 @@
 }
 
 @media (min-width: 768px) {
-  .container {
-  }
 }
