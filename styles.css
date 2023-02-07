@@ -7,6 +7,10 @@
   display: grid;
 }
 
+.dev-portrait {
+  min-width: 225px;
+}
+
 .bio {
   background-color: aquamarine;
 }
@@ -25,11 +29,27 @@ h1 {
   justify-self: center;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
 .about-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem;
+}
+
+.contact-icons {
+  padding-top: 5px;
+  display: flex;
+}
+
+.contact-icons.bio  i {
+  color: black;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 5px;
 }
 
 .projects {
@@ -49,6 +69,11 @@ h1 {
 
 .contact {
   background-color: coral;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+  align-items: center;
 }
 
 .project-card {
@@ -58,7 +83,30 @@ h1 {
 
 @media (min-width: 320px) {
   .dev-portrait {
-    width: 225px;
+    width: 250px;
+    margin-top: 2rem;
+  }
+
+  .contact h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .contact .call-to-action {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+  }
+
+  .contact .email {
+    margin-top: 1rem;
+    align-self: flex-start;
+  }
+
+  .contact-icons.footer i {
+    color: black;
+    cursor: pointer;
+    margin: 15px 10px;
+    font-size: 2rem;
   }
 }
 
