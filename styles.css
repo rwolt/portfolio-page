@@ -3,30 +3,48 @@
   box-sizing: border-box;
 }
 
+body {
+  /* background-color: #222831; */
+  background-color: #151515;
+  font-family: "Karla";
+  color: white;
+}
+
 .container {
   display: grid;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .dev-portrait {
   min-width: 225px;
 }
 
-.bio {
-  background-color: aquamarine;
-}
-
 .portrait-container {
-  position: relative;
-  display: grid;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
+  padding-top: 1rem;
   color: white;
-  font-size: 3rem;
-  position: absolute;
-  bottom: 0;
+  font-size: 2rem;
   justify-self: center;
+}
+
+h1 > span.header-second-line {
+  display: block;
+  text-align: center;
+}
+
+.header-name {
+  text-decoration: underline;
+  text-decoration-color: #5bd7a1;
 }
 
 h2 {
@@ -37,7 +55,8 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem 2rem;
+  text-align: center;
 }
 
 .contact-icons {
@@ -45,15 +64,14 @@ h2 {
   display: flex;
 }
 
-.contact-icons.bio  i {
-  color: black;
+.contact-icons.bio i {
+  color: white;
   font-size: 1.5rem;
   cursor: pointer;
   margin: 5px;
 }
 
 .projects {
-  background-color: palegoldenrod;
   text-align: center;
   padding-top: 2rem;
 }
@@ -68,7 +86,6 @@ h2 {
 }
 
 .contact {
-  background-color: coral;
   color: white;
   display: flex;
   flex-direction: column;
@@ -77,7 +94,6 @@ h2 {
 }
 
 .project-card {
-  background-color: palevioletred;
   height: 300px;
 }
 
@@ -103,7 +119,7 @@ h2 {
   }
 
   .contact-icons.footer i {
-    color: black;
+    color: white;
     cursor: pointer;
     margin: 15px 10px;
     font-size: 2rem;
