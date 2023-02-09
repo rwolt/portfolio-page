@@ -97,6 +97,16 @@ h2 {
   height: 300px;
 }
 
+.project-card img {
+  width: 100%;
+}
+
+.project-tools,
+.project-links {
+  display: flex;
+  flex-direction: row;
+}
+
 @media (min-width: 320px) {
   .dev-portrait {
     width: 250px;
