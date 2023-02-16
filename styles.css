@@ -1,13 +1,16 @@
+:root {
+  --main-bg-color: #fcf6f6;
+  --main-text-color: #01008c;
+}
 * {
   margin: 0;
   box-sizing: border-box;
 }
 
 body {
-  /* background-color: #222831; */
-  background-color: #151515;
+  background-color: var(--main-bg-color);
   font-family: "Karla";
-  color: white;
+  color: var(--main-text-color);
 }
 
 .container {
@@ -32,7 +35,7 @@ header {
 
 h1 {
   padding-top: 1rem;
-  color: white;
+  /* color: white; */
   font-size: 2rem;
   justify-self: center;
 }
@@ -44,7 +47,7 @@ h1 > span.header-second-line {
 
 .header-name {
   text-decoration: underline;
-  text-decoration-color: #5bd7a1;
+  text-decoration-color: var(--main-text-color);
 }
 
 h2 {
@@ -65,7 +68,7 @@ h2 {
 }
 
 .contact-icons.bio i {
-  color: white;
+  color: var(--main-text-color);
   font-size: 1.5rem;
   cursor: pointer;
   margin: 5px;
@@ -86,7 +89,6 @@ h2 {
 }
 
 .contact {
-  color: white;
   display: flex;
   flex-direction: column;
   padding: 0 2rem;
@@ -95,6 +97,10 @@ h2 {
 
 .project-card {
   height: 300px;
+}
+
+.project-title {
+  text-align: left;
 }
 
 .project-card img {
@@ -125,11 +131,10 @@ h2 {
 
   .contact .email {
     margin-top: 1rem;
-    align-self: flex-start;
   }
 
   .contact-icons.footer i {
-    color: white;
+    color: var(--main-text-color);
     cursor: pointer;
     margin: 15px 10px;
     font-size: 2rem;
